@@ -1,9 +1,24 @@
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue-modal: #2e2f42;
+  --color-grey: #2e2f42;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
+}
+
 /* font-family: "Raleway", sans-serif;
 font-family: "Roboto", sans-serif; */
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #fff;
+  color: var(--color-slate);
+  background-color: var(--color-white);
 }
 
 /* reset */
@@ -26,6 +41,13 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* common */
@@ -39,7 +61,7 @@ p {
 /* header */
 
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--color-cornflower);
 }
 
 .header-conteiner {
@@ -59,7 +81,7 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--color-iris);
 }
 
 .header-logo {
@@ -68,11 +90,11 @@ p {
 }
 
 .header-logo .logo-part {
-  color: #2e2f42;
+  color: var(--color-navy-blue);
 }
 
 .footer-logo .logo-part {
-  color: #f4f4fd;
+  color: var(--color-cloud);
 }
 
 .nav-list {
@@ -88,7 +110,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-navy-blue-modal);
 }
 
 .contacts {
@@ -108,61 +130,76 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--color-slate);
 }
+
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #404bbf;
+  color: var(--color-ocean);
 }
+
 /* main */
+
 h1 {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--color-white);
 }
 h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-navy-blue-modal);
 }
 h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-navy-blue-modal);
 }
 
 .main-banner {
-  background-color: #2e2f42;
+  background-color: var(--color-navy-blue-modal);
+  padding: 188px 0;
 }
 
 .main-banner-title {
+  max-width: 496px;
   text-align: center;
+  margin: 0 auto 48px;
 }
 
-.main-banner-button {
+/* .main-banner-button {
   font-family: inherit;
-}
+} */
+
 .main-banner-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  border: none;
 }
 
 .main-banner-button:hover,
 .main-banner-button:focus {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .presentation-text {
@@ -172,7 +209,7 @@ h3 {
 }
 
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--color-cloud);
 }
 
 .team-title {
@@ -181,7 +218,7 @@ h3 {
 }
 
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .team-text {
@@ -202,12 +239,12 @@ h3 {
 }
 
 .page-footer {
-  background-color: #2e2f42;
+  background-color: var(--color-navy-blue-modal);
 }
 
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--color-cloud);
 }
