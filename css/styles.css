@@ -65,7 +65,7 @@ img {
 
 /* common */
 
-.conteiner {
+.container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -77,7 +77,7 @@ img {
   border-bottom: 1px solid var(--color-cornflower);
 }
 
-.header-conteiner {
+.header-container {
   display: flex;
   align-items: center;
 }
